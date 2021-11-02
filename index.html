@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		{% load static %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shop &mdash; Real Kredit Savdo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Real Kredit Savdo" />
+	<meta name="keywords" content="Real Kredit Savdo, kredit savdo, kredit, sarmazor, qoshtepa, Maqsadbek, kredit magazin, telefonlar, mebel" />
+	<meta name="author" content="gettemplates.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+
+	<script src="{% static 'js/respond.min.js' %}"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-2">
+					<div id="fh5co-logo"><a href="{% url 'index' % }">Asosiy.</a></div>
+				</div>
+				<div class="col-md-6 col-xs-6 text-center menu-1">
+					<ul>
+						<li class="has-dropdown">
+							<a href="{% url 'product' %}">Chegirmalar</a>
+						</li>
+
+						<li class="has-dropdown">
+							<a href="{% url 'services' %}">Hizmatlarimiz</a>
+							<ul class="dropdown">
+								<li><a href="#">Kredit savdo</a></li>
+								<li><a href="#">Maxsulotlarni 1 yil davomida sug'urtalab berish</a></li>
+								<li><a href="#">Eltib berish hizmati</a></li>
+								<li><a href="#">Buyurtma asosida mebellar tayorlash</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'contact' %}">Ariza qoldirish</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+					<ul>
+						<li class="search">
+							<div class="input-group">
+								<form action="{% url 'home' %}" method="post">
+									{% csrf_token %}
+						      <input type="text"  name="Search" placeholder="Search..">
+						      <span class="input-group-btn">
+						        <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+						      </span>
+						    	</form>
+							</div>
+						</li>
+						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<aside id="fh5co-hero" class="js-fullheight">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'images/iphone13new.jpg' %});">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+
+		  	</ul>
+	  	</div>
+	</aside>
+
+	<div id="fh5co-services" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 text-center">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-credit-card"></i>
+						</span>
+						<h3>Tezkor to'lov tizimi</h3>
+						<p>Endi siz uyingizdan chiqmagan holda kredit to'lovlaringizni to'lashingiz mumkin.</p>
+						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-wallet"></i>
+						</span>
+						<h3>Potensial narx</h3>
+						<p>Faqatkina bizda hohlaganingizcha maxsulot oloshingiz mumkin. 100 000 so'mdan 30 000 000 so'mgacha</p>
+						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-paper-plane"></i>
+						</span>
+						<h3>Online arizalar</h3>
+						<p>Uyingizdan chiqmagan holda hujjat topshirishni istaysimi ?. Hoziroq telegram botimizga kiring.</p>
+						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-product">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span>Real Redit</span>
+					<h2>Maxsulotlar.</h2>
+					<p>Farg'ona viloyati bo'yicha yetkazib berish xizmati mutlaqo bepul.</p>
+				</div>
+			</div>
+			<div class="row">
+				{% for i in menyu %}
+					<div class="col-md-4 text-center animate-box">
+
+						<div class="product">
+
+						<div class="product-grid" style="background-image:url({{ i.rasm.url }});">
+
+							<div class="inner">
+								<p>
+
+									<a href="{% url 'single1' i.id %}" class="icon"><i class="icon-eye"></i></a>
+								</p>
+							</div>
+						</div>
+						<div class="desc">
+							<form action="#" method="post">
+								{% csrf_token %}
+							<h3><a href="{% url 'single' %}"><h3>{{ i.nomi }}</h3></a></h3>
+							<span class="price"><h3>{{ i.new_prise }} so'm</h3></span>
+
+							</form>
+						</div>
+					</div>
+
+				</div>
+				{% endfor %}
+			</div>
+
+		</div>
+	</div>
+	
+	<div id="fh5co-testimonial" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span>Savdodan</span>
+					<h2>Hursand mijozlar</h2>
+				</div>
+			</div>
+			<div class="row">
+				<form action="#" method="post">
+					{% csrf_token %}
+					{% for i in mijozlar1 %}
+					<div class="col-md-10 col-md-offset-1">
+					<div class="row animate-box">
+						<div class="owl-carousel owl-carousel-fullwidth">
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="{{ i.rasmi.url }}" alt="user">
+									</figure>
+									<span>{{ i.ismi }} <a href="#" class="Telegram">Telegram</a></span>
+									<blockquote>
+										<p>&ldquo;{{ i.desc}}&rdquo;</p>
+									</blockquote>
+								</div>
+							</div>
+							<div class="item">
+								{% for i in mijozlar2 %}
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="{{ i.rasmi.url }}" alt="user">
+									</figure>
+									<span>{{ i.ismi }}<a href="#" class="Telegram">Telegram</a></span>
+									<blockquote>
+										<p>&ldquo;{{ i.desc }}.&rdquo;</p>
+									</blockquote>
+								</div>
+								{% endfor %}
+							</div>
+							<div class="item">
+								{% for i in mijozlar3 %}
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="{{ i.rasmi.url }}" alt="user">
+									</figure>
+									<span>{{ i.ismi }} <a href="#" class="Telegram">Telegram</a></span>
+									<blockquote>
+										<p>&ldquo;{{ i.desc }}&rdquo;</p>
+									</blockquote>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+					{% endfor %}
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url({% static 'images/img_bg_5.jpg' %});">
+		<div class="container">
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-eye"></i>
+								</span>
+								<span class="counter js-counter" data-from="0" data-to="7016" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Qiziqishlar soni</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-shopping-cart"></i>
+								</span>
+								<span class="counter js-counter" data-from="0" data-to="850" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Hursand mijozlar</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-shop"></i>
+								</span>
+								<form action="#" method="post">
+									{% csrf_token %}
+								<span class="counter js-counter" data-from="0" data-to="{{ new_id }}" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Jami maxsulotlat</span>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-clock"></i>
+								</span>
+								<span class="counter js-counter" data-from="0" data-to="2187" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Ko'rilishlar vaqti</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>E'tiroz va shikoyatlar uchun</h2>
+					<p>Iltimos e'tiroz yoki shikoyatlaringiz bo'lsa bizga pochta manzilingizni jo'nating biz siz bilan aloqaga chiqamiz.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<form action="{% url 'home' %}" method="post" class="form-inline">
+						{% csrf_token %}
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="tel"  name="Email" class="form-control" id="email" placeholder="+998911234567">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<button type="submit" class="btn btn-default btn-block">Jo'natish</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 fh5co-widget">
+					<h3>Real Kredit Savdo.</h3>
+					<p>Orzularingzni bo'lib to'lang.</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<ul class="fh5co-footer-links">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Meetups</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Handbook</a></li>
+						<li><a href="#">Held Desk</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Find Designers</a></li>
+						<li><a href="#">Find Developers</a></li>
+						<li><a href="#">Teams</a></li>
+						<li><a href="#">Advertise</a></li>
+						<li><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2021 Dasturchi @Maqsadbekdev.</small>
+						<small class="block">Homiy "Real Kredit Savdo"<a href="@Maqsadbekdev" target="_blank"></a> Demo Images: <a href="http://blog.gessato.com/" target="_blank">Gessato</a> &amp; <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
